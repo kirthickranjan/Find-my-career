@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Library</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="fotter.css">
+    <style>
+         #pad-d{
+            margin-left: 3px;
+        }
+        img {
+            transition: transform 0.3s ease;
+            /* box-shadow: 0 4px 6px 0 rgba(22, 22, 26, 0.18); */
+            border-radius: 15px;
+            margin-bottom: 1.5em;
+            
+            /* border: 1px solid grey; */
+          }
+          img:hover {
+            transform: scale(1.1);
+            /* border: 1px solid black; */
+          }
+          .card{
+            border: 1px solid grey; 
+            box-shadow: 0 4px 6px 0 rgba(22, 22, 26, 0.18);
+          }
+          input{
+            margin-right: 8px;
+          }
+          
+    </style>
+
+</head>
+<body>
+
+    <%- include('partials/header') %>
+       
+    <br><br>
+    <center>
+        <div class="input-group mb-3 w-50 ">
+            <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary p-2 " type="button">search              &nbsp
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                  </svg>
+              </button>
+            </div>
+          </div>
+    </center>
+        
+        
+
+        <br><br><br>
+        
+        <center>
+            <div class="container">
+                <div class="row g-3 mx-auto">
+                    
+                    
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card" style="width: 18rem; ">
+                                <a href="/api/v1/career/engi/">
+                                    <center><img src="https://lmes-mars-cdn.jujube.in/images/streams/1589815770124_image.png" style="width: 200px;" class="card-img-top" alt="A Street in Europe">  </center>
+
+                                </a>
+                                <div class="card-body">                             
+                                    <h5 class="card-title" align="center"> Engineering </h5>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card" style="width: 18rem;">
+                            <a href="/api/v1/career/cs/">
+                                <center><img src="https://lmes-mars-cdn.jujube.in/images/streams/1589809570021_image.png" style="width: 200px;" class="card-img-top" alt="A Street in Europe">  </center>
+
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title" align="center">Computer Science & IT</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card" style="width: 18rem;">
+                            <a href="/api/v1/career/management/">
+                                <center><img src="https://lmes-mars-cdn.jujube.in/images/streams/1589815643810_image.png" style="width: 200px;" class="card-img-top" alt="A Street in Europe">  </center>
+
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title" align="center">Management Studies</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card" style="width: 18rem;">
+                            <a href="/api/v1/career/medical/">
+                                <center><img src="https://lmes-mars-cdn.jujube.in/images/streams/1589807763667_image.png" style="width: 200px;" class="card-img-top" alt="A Street in Europe">  </center>
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title" align="center">Medicine</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card" style="width: 18rem;">
+                            <a href="/api/v1/career/alliedmedical/">
+                            <center><img src="https://lmes-mars-cdn.jujube.in/images/streams/1589804952369_image.png" style="width: 200px;" class="card-img-top" alt="A Street in Europe">  </center>
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title" align="center">Allied Medicine</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card" style="width: 18rem;">
+                            <a href="/api/v1/career/science/">
+                                <center><img src="https://lmes-mars-cdn.jujube.in/images/streams/1589877672573_image.png" style="width: 200px;" class="card-img-top" alt="A Street in Europe">  </center>
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title" align="center">Science</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card" style="width: 18rem;">
+                            <a href="/api/v1/career/maths/">
+                                <center><img src="https://lmes-mars-cdn.jujube.in/images/streams/1589815858493_image.png" style="width: 200px;" class="card-img-top" alt="A Street in Europe">  </center>
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title" align="center">Math and Statistics</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card" style="width: 18rem;">
+                            <a href="/api/v1/career/defence/">
+                                <center><img src="https://lmes-mars-cdn.jujube.in/images/streams/1589898418206_image.png" style="width: 200px;" class="card-img-top" alt="A Street in Europe">  </center>
+
+                            </a>    
+                            <div class="card-body">
+                                <h5 class="card-title" align="center">Defence Services</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card" style="width: 18rem;">
+                             <a href="/api/v1/career/bank/">
+                                <center><img src="https://lmes-mars-cdn.jujube.in/images/streams/1589877685638_image.png" style="width: 200px;" class="card-img-top" alt="A Street in Europe">  </center>
+                             </a>   
+                            <div class="card-body">
+                                <h5 class="card-title" align="center">Banking and Finance</h5>
+                            </div>
+                        </div>
+                    </div>                
+                </div>
+            </div>
+        </center>
+
+        <br><br>
+        <!-- fotter -->
+        
+        <%- include('partials/fotter') %>
+
+            
+        
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
+
